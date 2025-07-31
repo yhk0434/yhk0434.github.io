@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>google</title>
+    <style>
+      *{
+        font-family: 'malgun gothic';
+      }
+      .g-nav-link{
+        margin-left:5px;
+        margin-right:5px;
+        padding:5px;
+      }
+      .g-nav-link:hover{
+        text-decoration-line: underline;
+        
+      }
+      .sc-container{
+        width: 100%;
+        height: 100%;
+      }
+      header{
+        width:100%;
+      }
+      .g-header{
+        width:100%;
+        display: flex;
+        align-items: center;
+      }
+      .g-header-contents-right{
+        width: 100%;
+        height:100%;
+        display:flex;
+        flex-direction: row-reverse;
+      }
+      .g-header-contents-left{
+        width:100%;
+        height :100%;
+        height :100%;
+        display: flex;
+      }
+      .g-menu-image{
+        padding: 5px;
+        border-radius: 50%;
+        width:30px;
+        height:30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .g-menu-image:hover{
+        background-color: rgb(215, 215, 215);
+      }
+      .g-login-button{
+        margin: 3px 5px;
+        padding: 5px;
+        background-color: blue;
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+        width:5em;
+      }
+      .g-login-button:hover{
+        box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.43);
+      }
+      article{
+        width: 100%;
+      }
+      .g-article{
+        height:70vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .g-search-container{
+        width: 40em;
+        height: 3em;
+        border: 1px solid rgba(0, 0, 0, 0.141);
+        margin-top:30px;
+        border-radius: 30px;
+        box-shadow: 0 0 2px 2px rgb(210, 210, 210);
+        padding-left: 1em;
+        padding-right: 1em;
+        display: flex;
+        align-items: center;
+      }
+      .g-search-container:hover{
+        box-shadow: 0 0 5px 2px rgb(166, 166, 166);
+      }
+      .g-search-box{
+        width:40em;
+        height: 70%;
+      }
+      .g-search-box input{
+        width:100%;
+        height:100%;
+        border: none;
+      }
+      .g-search-box input:focus{
+        outline:none;
+      }
+      .g-search-logo{
+        margin-right: 10px;
+      }
+      .g-button-container{
+        width: 500px;
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        justify-content: center;
+      }
+      .g-button{
+        margin-right:20px;
+        background-color: rgb(245, 245, 245);
+        padding:0.5em;
+        border-radius: 5px;
+
+      }
+      .g-button:hover{
+        box-shadow: 0 0 1px 1px rgb(229, 229, 229);
+      }
+
+      footer{
+        width:100%;
+      }
+      .g-footer{
+        width:100%;
+        height:12vh;
+        background-color:rgba(0, 0, 0, 0.123);
+      }
+      .g-footer-upper{
+        width:100%;
+        height:6vh;
+        display: flex;
+        align-items:center;
+      }
+      .g-footer-under{
+        width:100%;
+        height:6vh;
+        border-top: 2px solid rgba(0, 0, 0, 0.114);
+        display: flex;
+      }
+      .g-footer-under-left{
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .g-footer-under-right{
+        width:100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sc-contianer">
+      <header>
+        <div class="g-header">
+          <div class="g-header-contents-left">
+            <div class="g-nav-link">
+              google 정보
+            </div>
+            <div class="g-nav-link">
+              스토어
+            </div>
+          </div>
+          <div class="g-header-contents-right">
+            <div class="g-login-button">
+              로그인
+            </div>
+            <div class="g-menu-image">
+              <img 
+                width="25px"
+                src="https://www.svgrepo.com/show/513628/menu-grid.svg" alt="">
+            </div>
+            <div class="g-nav-link">
+              이미지
+            </div>
+            <div class="g-nav-link">
+              gmail
+            </div>
+            
+          </div>
+        </div>  
+      </header>
+      <article>
+        <div class="g-article">
+          <div class="g-logo-container">
+            <img
+              width="300px"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2880px-Google_2015_logo.svg.png" alt="">
+          </div>
+          <div class="g-search-container">
+            <div class="g-search-logo">
+              <img
+                width="20px" 
+                src="https://www.svgrepo.com/show/532555/search.svg" alt="">
+            </div>
+            <div class="g-search-box">
+              <input type="search" name="" id="">
+            </div>
+            <div class="g-search-logo">
+              <img
+                width="20px" 
+                src="https://www.svgrepo.com/show/525965/keyboard.svg" alt="">
+            </div>
+            <div class="g-search-logo">
+              <img
+                width="25px" 
+                src="https://www.svgrepo.com/show/498929/record.svg" alt="">
+            </div>
+            <div class="g-search-logo">
+              <img
+                width="20px" 
+                src="https://www.svgrepo.com/show/524359/camera-minimalistic.svg" alt="">
+            </div>
+          </div>
+          <div class="g-button-container">
+            <div class="g-button">
+              Google 검색
+            </div>
+            <div class="g-button">
+              I'm feeling lucky
+            </div>
+          </div>
+        </div>
+      </article>
+      <footer>
+        <div class="g-footer">
+          <div class="g-footer-upper">
+            <div class="g-nav-link">대한민국</div>
+          </div>
+          <div class="g-footer-under">
+            <div class="g-footer-under-left">
+              <div class="g-nav-link">
+                정보
+              </div>
+              <div class="g-nav-link">
+                광고
+              </div>
+              <div class="g-nav-link">
+                비즈니스
+              </div>
+              <div class="g-nav-link">
+                검색의 원리
+              </div>
+            </div>
+            <div class="g-footer-under-right">
+              <div class="g-nav-link">
+                약관
+              </div>
+              <div class="g-nav-link">
+                개인정보처리방침
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+  </body>
+</html>
