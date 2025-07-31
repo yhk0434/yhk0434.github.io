@@ -5,6 +5,16 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>google</title>
+    <script>
+      const searcher = document.querySelector('#search');
+      document.addEventListener("keydown", e=>{
+        console.log(e.code);
+       if(e.code == 'Enter'&& searcher.focus()){
+        window.open(`https://google.com/search?q=${searcher.textContent.replaceAll(' ','+')}`);
+       }
+
+      })
+    </script>
     <style>
       *{
         font-family: 'malgun gothic';
@@ -203,7 +213,7 @@
                 width="20px" 
                 src="https://www.svgrepo.com/show/532555/search.svg" alt="">
             </div>
-            <div class="g-search-box">
+            <div class="g-search-box" id="search">
               <input type="search" name="" id="">
             </div>
             <div class="g-search-logo">
