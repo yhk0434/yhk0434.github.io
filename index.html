@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>google</title>
     <script>
-      const searcher = document.querySelector('#search');
-      document.addEventListener("keydown", e=>{
-        console.log(e.code);
-       if(e.code == 'Enter'&& searcher.focus()){
-        window.open(`https://google.com/search?q=${searcher.textContent.replaceAll(' ','+')}`);
-       }
+      window.onload = ()=>{
+        const searcher = document.querySelector('#search');
+        document.addEventListener("keydown", e=>{
+          console.log(e.code);
+        if(e.code == 'Enter'&& searcher.focus()){
+          window.open(`https://google.com/search?q=${searcher.textContent.replaceAll(' ','+')}`);
+        }
 
-      })
+        })
+
+      }
+      
     </script>
     <style>
       *{
